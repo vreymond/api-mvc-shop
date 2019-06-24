@@ -1,0 +1,29 @@
+{
+  "name": "api-mvc-shop",
+  "version": "1.0.0",
+  "description": "Restful API using MVC structure and NoSQL database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vreymond/api-mvc-shop.git"
+  },
+  "keywords": [
+    "node",
+    "restful",
+    "api",
+    "mvc",
+    "shop"
+  ],
+  "author": "Valentin Reymond",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vreymond/api-mvc-shop/issues"
+  },
+  "homepage": "https://github.com/vreymond/api-mvc-shop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
