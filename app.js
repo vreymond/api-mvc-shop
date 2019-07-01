@@ -3,12 +3,13 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/users');
 
-mongoose.connect('mongodb+srv://vreymond:'+ process.env.MONGO_ATLAS_PW + '@vreymond-cluster-coben.mongodb.net/test?retryWrites=true&w=majority',
+mongoose.connect(process.env.DB_CONNECT,
 { useNewUrlParser: true });
 
 mongoose.Promise = global.Promise;
